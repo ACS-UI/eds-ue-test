@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Callout block test</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script type="module">
+      const response = await fetch('./callout.plain.html');
+      if (!response.ok) throw new Error(`Test content HTTP ${response.status}`);
+      document.querySelector('main').innerHTML = await response.text();
+      await import('/scripts/scripts.js');
+    </script>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>

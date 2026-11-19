@@ -45,6 +45,7 @@
       "components": [
         "accordion",
         "button",
+        "callout",
         "cards",
         "carousel",
         "columns",
