@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p99952-e1559416.adobeaemcloud.com/bin/franklin.delivery/acs-ui/eds-ue-test/main"
+    url: "https://author-p99952-e1559416.adobeaemcloud.com/bin/franklin.delivery/ACS-UI/eds-ue-test/main"
     type: "markup"
     suffix: ".html"
