@@ -335,6 +335,43 @@
     ]
   },
   {
+    "id": "peer-insights-introduction",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Introduction",
+        "description": "Add an optional eyebrow paragraph, an H2 heading, and an introductory paragraph.",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "peer-insights-card",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Image alternative text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Card content",
+        "description": "Add an H3 title, a description paragraph, and an optional bold byline paragraph.",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "quote",
     "fields": [
       {

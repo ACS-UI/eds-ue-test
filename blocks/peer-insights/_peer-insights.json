@@ -1,0 +1,94 @@
+{
+  "definitions": [
+    {
+      "title": "Peer Insights",
+      "id": "peer-insights",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Peer Insights",
+              "filter": "peer-insights"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Peer Insights Introduction",
+      "id": "peer-insights-introduction",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Peer Insights Introduction",
+              "model": "peer-insights-introduction"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Peer Insight Card",
+      "id": "peer-insights-card",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Peer Insight Card",
+              "model": "peer-insights-card"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "peer-insights-introduction",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "text",
+          "label": "Introduction",
+          "description": "Add an optional eyebrow paragraph, an H2 heading, and an introductory paragraph.",
+          "valueType": "string"
+        }
+      ]
+    },
+    {
+      "id": "peer-insights-card",
+      "fields": [
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "Image",
+          "valueType": "string",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "name": "imageAlt",
+          "label": "Image alternative text",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "text",
+          "label": "Card content",
+          "description": "Add an H3 title, a description paragraph, and an optional bold byline paragraph.",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "peer-insights",
+      "components": ["peer-insights-introduction", "peer-insights-card"]
+    }
+  ]
+}
